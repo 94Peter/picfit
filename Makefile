@@ -71,3 +71,9 @@ docker-build:
 
 lint:
 	golangci-lint run .
+
+docker:
+	docker build -t picfit .
+
+docker-up:
+	docker compose -f ./contribute/numax/docker-dev.yml up
